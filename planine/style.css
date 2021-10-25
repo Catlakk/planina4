@@ -1,0 +1,499 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: white;
+    background-color: #0B1D26;
+    margin: 0;
+    position: relative;
+}
+
+.header {
+    margin-bottom: 300px;
+}
+.slike{
+    position: relative;
+}
+.BG-hero{
+    position: absolute;
+}
+.BG-Content{
+    position: absolute;
+    top: 62.34vw;
+    z-index: 2;
+}
+.VG{
+    position: absolute;
+    top: 41.25vw;
+    z-index: 1;
+
+}
+.MG{
+    position: absolute;
+    top: 24.16vw;
+}
+.HG{
+    position: absolute;
+
+}
+.nav {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    margin: 0;
+    position: relative;
+    z-index: 3;
+}
+.logoDiv{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    grid-column: 1 / 3;
+    grid-row: 2 / 3;
+    align-items: center;
+    justify-content: center;
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+.menu li {
+    display: inline;
+    margin: 0 10px;
+    padding: 0;
+}
+.equipment{
+    margin-top: 4px;
+}
+
+.blog {
+    margin-top: 4px;
+}
+.account {
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
+    align-items: center;
+    justify-content: end;
+    display: flex;
+}
+
+.margin-top{
+    padding-top: 64px;
+    margin: 0 80px;
+}
+
+.naslovDiv {
+    display: grid;
+    margin: 100px 0 0;
+    position:relative;
+    z-index: 3;
+}
+.naslov {
+    grid-row: 1 / 2;
+    max-width: 591px;
+}
+h1  {
+    font-family: Chronicle Display;
+    font-style: normal;
+    font-size: 88px;
+    font-weight: 600;
+    line-height: 100px;
+    text-align: left;
+    letter-spacing: 0em;
+    margin: 0;
+}
+.scroll {
+    margin-top: 20px;
+}
+.instagram {
+    grid-row: 2 / 3;
+    width: 24px;
+    max-height: 173px;
+    margin: 100px 0 0 0px;
+}
+.slider {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    margin: 20px 20px 80px;
+    position: relative;
+    z-index: 4;
+    
+}
+.gridRow {
+    display: grid;
+}
+.gridRowDiv1 {
+    position: relative;
+    margin: 0;
+}
+.brojevi {
+    position: absolute;
+    top: -26px;
+    width: 92px;
+}
+.podnaslov {
+    height: 22px;
+    max-width: calc(100% - 20px);
+    margin-left: 20px;
+}
+h2 /* Grid Item Title */ {
+    font-family: Chronicle Display;
+    font-style: normal;
+    letter-spacing: 0em;
+    text-align: left;
+    margin: 10px 0 0;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 77px;
+
+}
+.text{
+    font-family: Gillroy;
+    font-style: normal;
+    font-size: 18px;
+    font-weight:bold;
+    text-align: left;
+    margin: 0;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+.moto {
+    font-family: Gillroy;
+    font-style: normal;
+    font-size: 18px;
+    font-weight: 500;
+    text-align: left;
+    margin: 0;
+    line-height: 32px;
+    letter-spacing: 0px;
+}
+.more {
+    margin-top: 10px;
+}
+.gridRow2 {
+    margin: 40px 0 100px;
+}
+.img {
+    width: 100%;
+}
+
+.footerDiv1 {
+    grid-row: 2 / 3;
+    margin: 20px;
+}
+.moto {
+    max-width: 303px;
+    margin-top: 17px;
+}
+.copy {
+    font-family: Gillroy;
+    font-weight: 500;
+    font-size: 18px;
+    opacity: 0.5;
+    line-height: 32px;
+    margin: 7px 0 0;
+}
+.footerDiv2 {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+.footerMenuDiv1 {
+    margin-right: 20px;
+}
+.footerPodnaslov {
+    width: 100%;
+    margin-bottom: 12px;
+}
+.footerMenu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.footerMenu li {
+    font-family: Gillroy;
+    font-style: normal;
+    font-size: 13px;
+    font-weight: 500;
+    text-align: left;
+    margin-top: 12px;
+    line-height: 24px;
+    letter-spacing: 0px;
+}
+@media only screen and (min-width: 340px) {
+    .slike{
+        max-width: 340px;
+    }
+    .footerMenu li {
+        font-size: 15px;
+        line-height: 28px;
+    }
+}
+@media only screen and (min-width: 400px) {
+    .slike{
+        max-width: 400px;
+        
+    }
+    h1 {
+        font-size: 56px;
+        line-height: 64px;
+    }
+    .footerMenu li {
+        font-size: 18px;
+        line-height: 32px;
+    }
+}
+@media only screen and (min-width: 430px) {
+    .slike{
+        max-width: 430px;
+    }
+    .footerDiv2 {
+        justify-content: start;
+    }
+    .footerMenuDiv1 {
+        margin-right: 40px;
+    }
+}
+@media only screen and (min-width: 600px) {
+    .slike{
+        max-width: 600px;
+    }
+
+    .logoDiv {
+        grid-column: 1 / 2;
+        grid-row: 1 / 2;
+    }
+    .menu {
+        grid-column: 2 / 3;
+        grid-row: 1 / 2;
+    }
+    .account {
+        grid-column: 3 / 4;
+        grid-row: 1 / 2;
+    }
+    .img {
+        max-height: 600px;
+        object-fit: cover;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .slike{
+        max-width: 768px;
+    }
+    .text {
+        max-width: 591px;
+    }
+    .grid {
+        margin: 40px 80px 80px;
+    }
+    .gridRowDiv1 {
+        margin: 0;
+    }
+    .footerDiv1 {
+        grid-row: 1 / 2;
+        margin: 0 20px 0 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+       
+    }
+    .footerDiv2 {
+        grid-row: 1 / 2;
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 900px) {
+    .slike{
+        width: 900px;
+    }
+   
+
+    .naslovDiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 100px 0;
+    }
+    .instagram {
+        grid-row: 1 / 2;
+        margin: 0;
+    }
+    .naslov {
+        grid-row: 1 / 2;
+        margin: 0;
+    }
+    .slider {
+        display: initial;
+        grid-row: 1 / 2;
+        max-height: 240px;
+    }
+    .grid {
+        margin: 56px 80px 111px;
+    }
+    h2 {
+        font-size: 64px;
+        line-height: 77px;
+        max-width: 555px;
+        margin: 27px 0;
+    }
+    .brojevi {
+        width: 275px;
+        height: 240px;
+    }
+    .content {
+        margin: 70px 0 0 100px;
+    }
+    .podnaslov {
+        margin: 0;
+    }
+}
+@media only screen and (min-width: 1348px) {
+    
+    .slike{
+        width: 1348px;
+    }
+    .menu li {
+        margin: 0 20px;
+    }
+    .naslovDiv {
+        margin: 198px 0;
+    }
+    .naslov {
+        max-width: 950px;
+    }
+    h1 {
+        font-size: 88px;
+        line-height: 100px;
+        margin: 32px 0;
+    }
+    .grid {
+        margin: 64px 100px 131px;
+        padding-top: 500px;
+    }
+    .gridRow {
+        margin-top: 200px;
+    }
+    .gridRowDiv1 {
+        grid-row: 1 / 2;
+        display: grid;
+        align-items: center;
+        justify-content: space-evenly;
+        position: relative;
+    }
+    .gridRowDiv2 {
+        grid-row: 1 / 2;
+        width: 566px;
+        margin: 0;
+    }
+    
+
+    .textImg {
+        grid-template-columns: auto 566px;
+    }
+    .textImg .gridRowDiv1 {
+        grid-column: 1 / 2;
+        justify-content: start;
+    }
+    .textImg .gridRowDiv2{
+        grid-column: 2 / 3;
+    }
+    .textImg .brojevi {
+        left: 0;
+    }
+
+
+
+
+
+    .imgText {
+        grid-template-columns: 566px auto;
+    }
+    .imgText .gridRowDiv1 {
+        grid-column: 2 / 3;
+        justify-content: end;
+    }
+    .imgText .gridRowDiv2 {
+        grid-column: 1 / 2;
+    }
+    .imgText .brojevi {
+        left: 40px;
+    }
+    .brojevi {
+        top: 38px;
+    }
+    .content {
+        height: 439px;
+        margin: 0 40px 0 150px;
+    }
+    h2 {
+        font-size: 64px;
+        line-height: 77px;
+        max-width: 555px;
+        margin: 27px 0;
+    }
+    .text {
+        max-width: 632px;
+    }
+    .more {
+        margin-top: 27px;
+    }
+    .img {
+        width: 100%;
+        height: 720px;
+        max-height: none;
+    }
+    .footer {
+        grid-template-columns: auto 566px;
+    }
+    .footerDiv1 {
+        width: 100%;
+    }
+    .footerDiv2 {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+@media only screen and (min-width: 1588px) {
+    .imgText .brojevi {
+        left: unset;
+        right: 507px;
+    }
+    .slike{
+        width: 1588px;
+    }
+}
+@media only screen and (min-width: 1668px) {
+    .imgText.brojevi {
+        right: 507px;
+    }
+    .brojevi {
+        right: 507px;
+    }
+    .slike{
+        width: 1668px;
+    }
+}
+@media only screen and (min-width: 1920px) {
+    .grid {
+        margin: 64px 100px 131px;
+        padding-top: 700px;
+    }
+    .gridRow{
+        margin: 200px 149px 0;
+    }
+    .footer {
+        margin: 200px 149px 0;
+    }
+
+}
+
+
